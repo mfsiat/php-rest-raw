@@ -4,7 +4,7 @@
     private $host = 'localhost';
     private $db_name = 'test';
     private $username = 'root';
-    private $password = 'null';
+    private $password = '1234';
     private $conn;
 
     // DB Connect 
@@ -15,7 +15,7 @@
         $this->conn = new PDO('mysql:host='.$this->host.';dbname='.$this->db_name, $this->username, $this->password);
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       } catch(PDOException $e) {
-        echo 'Connection Error: '.$e->getMessage();
+        echo 'Connection Error: ' . $e->getMessage();
       }
 
       return $this->conn;

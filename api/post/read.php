@@ -21,7 +21,7 @@
   $num = $result->rowCount();
 
   // Check if any posts
-  if($null>0) {
+  if($num > 0) {
     // Post array
     $posts_arr = array();
     $posts_arr['data'] = array();
@@ -50,5 +50,5 @@
     // No Posts
     echo json_encode(
       array('message' => 'No Posts Found')
-    )
+    );
   }

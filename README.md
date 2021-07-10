@@ -8,4 +8,5 @@
 
 ## Available routes
 
-- GET method: **`localhost/api/post/read.php`**
+- GET method: **`http://localhost/api/post/read.php`**
+- GET single data: **`http://localhost/php-rest/api/post/read_single.php?id=1`**
